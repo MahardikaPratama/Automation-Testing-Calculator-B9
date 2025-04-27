@@ -1,0 +1,33 @@
+package com.calculator;
+
+public class Validate {
+    private static final short MIN_RANGE = -32768;
+    private static final short MAX_RANGE = 32767;
+
+    public short validateNumber(String numStr) throws NumberFormatException, IllegalArgumentException {
+        int numInt;
+        try {
+            numInt = Integer.parseInt(numStr);
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException("Input harus berupa angka");
+        }
+        
+        if (numInt < MIN_RANGE || numInt > MAX_RANGE) {
+            throw new IllegalArgumentException("Angka harus berada pada range -32,768 hingga 32,767");
+        }
+        
+        return (short)numInt;
+    }
+
+    public void validateOperator(String operator) throws IllegalArgumentException {
+        if (!operator.matches("[+\\-*/]")) {
+            throw new IllegalArgumentException("Operator yang diperbolehkan hanya +, -, *, /");
+        }
+    }
+
+    public void validateDivision(short num2) throws IllegalArgumentException {
+        if (num2 == 0) {
+            throw new IllegalArgumentException("Pembagi tidak boleh bernilai nol");
+        }
+    }
+}
