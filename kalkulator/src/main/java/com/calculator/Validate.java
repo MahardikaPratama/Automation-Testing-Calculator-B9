@@ -1,11 +1,12 @@
 package com.calculator;
 
 public class Validate {
-    private static final short MIN_RANGE = -32768;
-    private static final short MAX_RANGE = 32767;
 
     public short validateNumber(String numStr) throws NumberFormatException, IllegalArgumentException {
         int numInt;
+        short MIN_RANGE = -32768;
+        short MAX_RANGE = 32767;
+
         try {
             numInt = Integer.parseInt(numStr);
         } catch (NumberFormatException e) {

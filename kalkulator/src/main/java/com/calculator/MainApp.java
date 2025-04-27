@@ -4,72 +4,47 @@ import java.util.Scanner;
 
 public class MainApp {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Validate validate = new Validate();
-        Compute compute = new Compute();
-        
-        System.out.println("------------------------------");
-        System.out.println("**** Kalkulator Sederhana ****");
-        System.out.println("------------------------------");
-        System.out.println();
-        
-        try {
-            // Input angka pertama dengan validasi langsung
-            short num1 = 0;
-            boolean validNum1 = false;
-            while (!validNum1) {
-                System.out.print("Masukkan angka pertama: ");
-                String num1Str = scanner.nextLine();
-                try {
-                    num1 = validate.validateNumber(num1Str);
-                    validNum1 = true;
-                } catch (IllegalArgumentException e) {
-                    System.out.println("Error: " + e.getMessage());
-                    System.out.println();
-                }
-            }
+        try (Scanner scanner = new Scanner(System.in)) {
+            Validate validate = new Validate();
+            Compute compute = new Compute();
 
-            // Input angka kedua dengan validasi langsung
-            short num2 = 0;
-            boolean validNum2 = false;
-            while (!validNum2) {
-                System.out.print("Masukkan angka kedua: ");
-                String num2Str = scanner.nextLine();
-                try {
-                    num2 = validate.validateNumber(num2Str);
-                    validNum2 = true;
-                } catch (IllegalArgumentException e) {
-                    System.out.println("Error: " + e.getMessage());
-                    System.out.println();
-                }
-            }
+            System.out.println("------------------------------");
+            System.out.println("**** Kalkulator Sederhana ****");
+            System.out.println("------------------------------\n");
 
-            // Input operator dengan validasi langsung
-            String operator = "";
-            boolean validOperator = false;
-            while (!validOperator) {
-                System.out.print("Masukkan operator (+, -, *, /): ");
-                operator = scanner.nextLine();
-                try {
-                    validate.validateOperator(operator);
-                    
-                    // Validasi khusus pembagian
-                    if (operator.equals("/")) {
-                        validate.validateDivision(num2);
-                    }
-                    validOperator = true;
-                } catch (IllegalArgumentException e) {
-                    System.out.println("Error: " + e.getMessage());
-                    System.out.println();
-                }
-            }
+            short num1 = inputNumber(scanner, validate, "Masukkan angka pertama: ");
+            short num2 = inputNumber(scanner, validate, "Masukkan angka kedua: ");
+            String operator = inputOperator(scanner, validate, num2);
 
-            // Lakukan perhitungan dan tampilkan hasil
             String result = compute.performCalculation(num1, num2, operator);
-            System.out.println("Hasil " + num1 + " " + operator + " " + num2 + " = " + result);
-            
-        } finally {
-            scanner.close();
+            System.out.println("Hasil dari " + num1 + " " + operator + " " + num2 + " = " + result);
+        }
+    }
+
+    private static short inputNumber(Scanner scanner, Validate validate, String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            try {
+                return validate.validateNumber(scanner.nextLine());
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage() + "\n");
+            }
+        }
+    }
+
+    private static String inputOperator(Scanner scanner, Validate validate, short num2) {
+        while (true) {
+            System.out.print("Masukkan operator (+, -, *, /): ");
+            String operator = scanner.nextLine();
+            try {
+                validate.validateOperator(operator);
+                if (operator.equals("/")) {
+                    validate.validateDivision(num2);
+                }
+                return operator;
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage() + "\n");
+            }
         }
     }
 }

@@ -1,19 +1,18 @@
 package com.calculator;
 
 public class Compute {
-    private final Calculate calculate = new Calculate();
 
     public String performCalculation(short num1, short num2, String operator) {
         try {
             switch (operator) {
                 case "+":
-                    return String.valueOf(calculate.add(num1, num2));
+                    return String.valueOf((short)(num1 + num2));
                 case "-":
-                    return String.valueOf(calculate.subtract(num1, num2));
+                    return String.valueOf((short)(num1 - num2));
                 case "*":
-                    return String.valueOf(calculate.multiply(num1, num2));
+                    return String.valueOf((short)(num1 * num2));
                 case "/":
-                    return String.format("%.2f", calculate.divide(num1, num2));
+                    return String.format("%.2f", (float)(num1 / num2));
                 default:
                     return "Error: Operator tidak valid";
             }
