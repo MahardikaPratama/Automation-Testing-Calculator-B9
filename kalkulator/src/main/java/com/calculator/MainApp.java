@@ -12,8 +12,8 @@ public class MainApp {
             System.out.println("**** Kalkulator Sederhana ****");
             System.out.println("------------------------------\n");
 
-            short num1 = inputNumber(scanner, validate, "Masukkan angka pertama: ");
-            short num2 = inputNumber(scanner, validate, "Masukkan angka kedua: ");
+            int num1 = inputNumber(scanner, validate, "Masukkan angka pertama: ");
+            int num2 = inputNumber(scanner, validate, "Masukkan angka kedua: ");
             String operator = inputOperator(scanner, validate, num2);
 
             String result = compute.performCalculation(num1, num2, operator);
@@ -21,7 +21,7 @@ public class MainApp {
         }
     }
 
-    private static short inputNumber(Scanner scanner, Validate validate, String prompt) {
+    private static int inputNumber(Scanner scanner, Validate validate, String prompt) {
         while (true) {
             System.out.print(prompt);
             try {
@@ -32,7 +32,7 @@ public class MainApp {
         }
     }
 
-    private static String inputOperator(Scanner scanner, Validate validate, short num2) {
+    private static String inputOperator(Scanner scanner, Validate validate, int num2) {
         while (true) {
             System.out.print("Masukkan operator (+, -, *, /): ");
             String operator = scanner.nextLine();

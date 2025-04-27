@@ -2,10 +2,10 @@ package com.calculator;
 
 public class Validate {
 
-    public short validateNumber(String numStr) throws NumberFormatException, IllegalArgumentException {
+    public int validateNumber(String numStr) throws NumberFormatException, IllegalArgumentException {
         int numInt;
-        short MIN_RANGE = -32768;
-        short MAX_RANGE = 32767;
+        int MIN_RANGE = -32768;
+        int MAX_RANGE = 32767;
 
         try {
             numInt = Integer.parseInt(numStr);
@@ -17,7 +17,7 @@ public class Validate {
             throw new IllegalArgumentException("Angka harus berada pada range -32,768 hingga 32,767");
         }
         
-        return (short)numInt;
+        return (int)numInt;
     }
 
     public void validateOperator(String operator) throws IllegalArgumentException {
@@ -26,7 +26,7 @@ public class Validate {
         }
     }
 
-    public void validateDivision(short num2) throws IllegalArgumentException {
+    public void validateDivision(int num2) throws IllegalArgumentException {
         if (num2 == 0) {
             throw new IllegalArgumentException("Pembagi tidak boleh bernilai nol");
         }
