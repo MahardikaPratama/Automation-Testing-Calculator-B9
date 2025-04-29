@@ -7,18 +7,35 @@ public class MainApp {
         try (Scanner scanner = new Scanner(System.in)) {
             Validate validate = new Validate();
             Compute compute = new Compute();
+            printHeader();
 
-            System.out.println("------------------------------");
-            System.out.println("**** Kalkulator Sederhana ****");
-            System.out.println("------------------------------\n");
+            while (true) {
 
-            int num1 = inputNumber(scanner, validate, "Masukkan angka pertama: ");
-            int num2 = inputNumber(scanner, validate, "Masukkan angka kedua: ");
-            String operator = inputOperator(scanner, validate, num2);
+                System.out.println();
+                int num1 = inputNumber(scanner, validate, "Masukkan angka pertama: ");
+                int num2 = inputNumber(scanner, validate, "Masukkan angka kedua: ");
+                String operator = inputOperator(scanner, validate, num2);
 
-            String result = compute.performCalculation(num1, num2, operator);
-            System.out.println("Hasil dari " + num1 + " " + operator + " " + num2 + " = " + result);
+                String result = compute.performCalculation(num1, num2, operator);
+                System.out.println("Hasil dari " + num1 + " " + operator + " " + num2 + " = " + result);
+                System.out.println();
+
+                System.out.print("Apakah Anda ingin menghitung lagi? (y/n): ");
+                String choice = scanner.nextLine().trim().toLowerCase();
+                if (!choice.equals("y")) {
+                    System.out.println("\nTerima kasih telah menggunakan kalkulator!");
+                    System.out.println();
+                    break;
+                }
+                System.out.println("\n------------------------------------------");
+            }
         }
+    }
+
+    private static void printHeader() {
+        System.out.println("------------------------------------------");
+        System.out.println("*******    Kalkulator Sederhana    *******");
+        System.out.println("------------------------------------------");
     }
 
     private static int inputNumber(Scanner scanner, Validate validate, String prompt) {
