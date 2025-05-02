@@ -19,16 +19,15 @@ public class MainApp {
         Validate validate = new Validate();
         Compute compute = new Compute();
         printHeader();
+        boolean isRunning = true;
 
-        while (true) {
+        while (isRunning) {
             performCalculationFlow(scanner, validate, compute);
 
             if (!askRepeat(scanner)) {
                 printExitMessage();
-                break;
+                isRunning = false;
             }
-
-            printSeparator();
         }
     }
 
@@ -87,13 +86,6 @@ public class MainApp {
     private static void printExitMessage() {
         System.out.println("\nTerima kasih telah menggunakan kalkulator!");
         System.out.println();
-    }
-
-    /*
-    * Fungsi ini menampilkan garis pemisah antarkalkulasi
-    */
-    private static void printSeparator() {
-        System.out.println("\n------------------------------------------");
     }
 
     /*
