@@ -66,18 +66,25 @@ public class MainApp {
     * Fungsi ini menanyakan kepada user apakah ingin mengulang kalkulasi
     */
     private static boolean askRepeat(Scanner scanner) {
-        while (true){    
+        boolean isValidInput = false;
+        boolean isValidChoice = false;
+        
+        while (!isValidInput) {    
             System.out.print("Apakah Anda ingin menghitung lagi? (y/n): ");
             String choice = scanner.nextLine().trim().toLowerCase();
             if (choice.equals("y")){
-                return true;
+                isValidChoice = true;
+                isValidInput = true;
             } else if (choice.equals("n")){
-                return false;
+                isValidChoice = false;
+                isValidInput = true;
             } else {
                 System.out.println("Error: Pilihan tidak valid. Silakan masukkan 'y' atau 'n'.");
                 System.out.println();
+                isValidInput = false;
             }
         }
+        return isValidChoice;
     }
 
     /*
