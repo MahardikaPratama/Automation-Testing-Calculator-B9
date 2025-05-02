@@ -3,6 +3,10 @@ package com.calculator;
 public class Compute {
     private final Calculate calculate = new Calculate();
 
+    /*
+     * Fungsi ini digunakan untuk melakukan perhitungan berdasarkan operator yang
+     * dimasukkan
+     */
     public String performCalculation(int num1, int num2, String operator) {
         switch (operator) {
             case "+":

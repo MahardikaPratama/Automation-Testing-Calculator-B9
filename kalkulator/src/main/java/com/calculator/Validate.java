@@ -1,34 +1,52 @@
 package com.calculator;
 
 public class Validate {
+    private static final int MIN_RANGE = -32768;
+    private static final int MAX_RANGE = 32767;
 
-    public int validateNumber(String numStr) throws NumberFormatException, IllegalArgumentException {
-        int numInt;
-        int MIN_RANGE = -32768;
-        int MAX_RANGE = 32767;
-
+    /*
+     * Fungsi ini digunakan untuk memvalidasi apakah input dari user berupa angka
+     */
+    public boolean isNumeric(String numStr) {
         try {
-            numInt = Integer.parseInt(numStr);
+            Integer.parseInt(numStr);
+            return true;
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Input harus berupa angka");
-        }
-        
-        if (numInt < MIN_RANGE || numInt > MAX_RANGE) {
-            throw new IllegalArgumentException("Angka harus berada pada range -32,768 hingga 32,767");
-        }
-        
-        return (int)numInt;
-    }
-
-    public void validateOperator(String operator) throws IllegalArgumentException {
-        if (!operator.matches("[+\\-*/]")) {
-            throw new IllegalArgumentException("Operator yang diperbolehkan hanya +, -, *, /");
+            return false;
         }
     }
 
-    public void validateDivision(int num2) throws IllegalArgumentException {
-        if (num2 == 0) {
-            throw new IllegalArgumentException("Pembagi tidak boleh bernilai nol");
+    /*
+     * Fungsi ini digunakan untuk memvalidasi apakah angka berada dalam range yang diperbolehkan
+     */
+    public boolean isInRange(String numStr) {
+        int num = Integer.parseInt(numStr);
+        if (num < MIN_RANGE || num > MAX_RANGE) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+        /*
+     * Fungsi ini digunakan untuk memvalidasi apakah operator yang dimasukkan valid (+, -, *, /)
+     */
+    public boolean isValidOperator(String operator) {
+        if (operator.matches("[+\\-*/]")){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /*
+     * Fungsi ini digunakan untuk memvalidasi apakah pembagian tidak dilakukan oleh nol
+     */
+    public boolean isValidDivision(int num2) {
+        if (num2 != 0){
+            return true;
+        } else {
+            return false;
         }
     }
 }
