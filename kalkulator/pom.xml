@@ -40,13 +40,18 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.3</version>
                 <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
-                    <systemPropertyVariables>
-                        <allure.results.directory>target/allure-results</allure.results.directory>
-                    </systemPropertyVariables>
-                </configuration>
+					<includes>
+						<include>**/*Test.java</include>
+						<include>**/*Tests.java</include>
+					</includes>
+					<testFailureIgnore>false</testFailureIgnore>
+					<skipTests>false</skipTests>
+					<parallel>methods</parallel>
+                    <threadCount>4</threadCount>
+					<systemPropertyVariables>
+						<allure.results.directory>target/allure-results</allure.results.directory>
+					</systemPropertyVariables>
+				</configuration>
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>
