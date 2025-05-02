@@ -8,10 +8,9 @@ public class Validate {
      * Fungsi ini digunakan untuk memvalidasi apakah input dari user berupa angka
      */
     public boolean isNumeric(String numStr) {
-        try {
-            Integer.parseInt(numStr);
+        if (numStr.matches("-?\\d+")) {
             return true;
-        } catch (NumberFormatException e) {
+        } else {
             return false;
         }
     }
