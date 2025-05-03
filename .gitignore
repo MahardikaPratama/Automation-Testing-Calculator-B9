@@ -33,3 +33,6 @@ build/
 
 ### Target ###
 target/
+
+### Maven ###
+.mvn/timing.properties

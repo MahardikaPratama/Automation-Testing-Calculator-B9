@@ -63,6 +63,7 @@ Laporan pengujian dihasilkan menggunakan **Allure**. Laporan ini memberikan visu
 1. Pastikan Anda telah menginstal **Java 17** dan **Maven**.
 2. Jalankan perintah berikut di terminal untuk menjalankan program:
    ```bash
+   cd kalkulator/
    mvn clean compile exec:java -Dexec.mainClass="com.calculator.MainApp"
    ```
 
