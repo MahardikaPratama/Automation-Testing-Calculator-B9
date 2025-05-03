@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Fri May 02 14:43:58 WIB 2025","Fri May 02 14:43:58 WIB 2025","74","","CalculateTest","","CalculateTest","testDivideByZero","testDivideByZero()","Verify that dividing by zero throws ArithmeticException"
-"passed","Fri May 02 14:43:58 WIB 2025","Fri May 02 14:43:58 WIB 2025","3","","CalculateTest","","CalculateTest","testSubtract","testSubtract()","Verify that subtraction of two integers is correct"
-"passed","Fri May 02 14:43:58 WIB 2025","Fri May 02 14:43:58 WIB 2025","3","","CalculateTest","","CalculateTest","testDivide","testDivide()","Verify that division of two integers returns correct float value"
-"passed","Fri May 02 14:43:58 WIB 2025","Fri May 02 14:43:58 WIB 2025","4","","CalculateTest","","CalculateTest","testMultiply","testMultiply()","Verify that multiplication of two integers is correct"
-"passed","Fri May 02 14:43:58 WIB 2025","Fri May 02 14:43:58 WIB 2025","9","","CalculateTest","","CalculateTest","testAdd","testAdd()","Verify that addition of two integers is correct"
