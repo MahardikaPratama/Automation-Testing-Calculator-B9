@@ -259,4 +259,167 @@ public class CalculateTest {
         int expected = 0;
         assertEquals(expected, result);
     }
+
+    @Test
+    @DisplayName("Test Multiply Function - Positive Numbers")
+    @Story("Multiplication")
+    @Description("Menguji operasi perkalian dua buah input bilangan positif")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC1 - Multiply Function Test")
+    public void testMultiply_PositiveNumbers() {
+        // (1) Persiapan (arrange, build)
+        Allure.step("Persiapan data: a = 5, b = 3");
+        int a = 5;
+        int b = 3;
+
+        // (2) Eksekusi (act, operate)
+        Allure.step("Memanggil fungsi multiply dengan parameter a dan b");
+        int result = sut.multiply(a, b);
+
+        // (3) Verifikasi (assert, check)
+        Allure.step("Memverifikasi hasil perhitungan. Expected: '15', Actual: " + result);
+        int expected = 15;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Test Multiply Function - Positive and Negative Numbers")
+    @Story("Multiplication")
+    @Description("Menguji operasi perkalian bilangan positif dan negatif")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC2 - Multiply Function Test")
+    public void testMultiply_PositiveAndNegativeNumbers() {
+        // (1) Persiapan (arrange, build)
+        Allure.step("Persiapan data: a = 5, b = -3");
+        int a = 5;
+        int b = -3;
+
+        // (2) Eksekusi (act, operate)
+        Allure.step("Memanggil fungsi multiply dengan parameter a dan b");
+        int result = sut.multiply(a, b);
+
+        // (3) Verifikasi (assert, check)
+        Allure.step("Memverifikasi hasil perhitungan. Expected: '-15', Actual: " + result);
+        int expected = -15;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Test Multiply Function - Negative Numbers")
+    @Story("Multiplication")
+    @Description("Menguji operasi perkalian dua buah input bilangan negatif")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC3 - Multiply Function Test")
+    public void testMultiply_NegativeNumbers() {
+        // (1) Persiapan (arrange, build)
+        Allure.step("Persiapan data: a = -5, b = -3");
+        int a = -5;
+        int b = -3;
+
+        // (2) Eksekusi (act, operate)
+        Allure.step("Memanggil fungsi multiply dengan parameter a dan b");
+        int result = sut.multiply(a, b);
+
+        // (3) Verifikasi (assert, check)
+        Allure.step("Memverifikasi hasil perhitungan. Expected: '15', Actual: " + result);
+        int expected = 15;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Test Multiply Function - One Operand is Zero")
+    @Story("Multiplication")
+    @Description("Menguji operasi perkalian dua buah input dengan salah satu bilangan nol")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC4 - Multiply Function Test")
+    public void testMultiply_OneOperandIsZero() {
+        // (1) Persiapan (arrange, build)
+        Allure.step("Persiapan data: a = 0, b = 7");
+        int a = 0;
+        int b = 7;
+
+        // (2) Eksekusi (act, operate)
+        Allure.step("Memanggil fungsi multiply dengan parameter a dan b");
+        int result = sut.multiply(a, b);
+
+        // (3) Verifikasi (assert, check)
+        Allure.step("Memverifikasi hasil perhitungan. Expected: '0', Actual: " + result);
+        int expected = 0;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Test Multiply Function - Both Operands are Zero")
+    @Story("Multiplication")
+    @Description("Menguji operasi perkalian dua buah input bilangan nol")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC5 - Multiply Function Test")
+    public void testMultiply_BothOperandsAreZero() {
+        // (1) Persiapan (arrange, build)
+        Allure.step("Persiapan data: a = 0, b = 0");
+        int a = 0;
+        int b = 0;
+
+        // (2) Eksekusi (act, operate)
+        Allure.step("Memanggil fungsi multiply dengan parameter a dan b");
+        int result = sut.multiply(a, b);
+
+        // (3) Verifikasi (assert, check)
+        Allure.step("Memverifikasi hasil perhitungan. Expected: '0', Actual: " + result);
+        int expected = 0;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Test Divide Function - Positive Numbers")
+    @Story("Division")
+    @Description("Menguji operasi pembagian dua buah input bilangan positif")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC1 - Divide Function Test")
+    public void testDivide_PositiveNumbers() {
+        // (1) Persiapan (arrange, build)
+        Allure.step("Persiapan data: a = 6, b = 3");
+        int a = 6;
+        int b = 3;
+
+        // (2) Eksekusi (act, operate)
+        Allure.step("Memanggil fungsi divide dengan parameter a dan b");
+        float result = sut.divide(a, b);
+
+        // (3) Verifikasi (assert, check)
+        Allure.step("Memverifikasi hasil perhitungan. Expected: '2.00', Actual: " + result);
+        String expected = "2.00";
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Test Divide Function - Positive and Negative Numbers")
+    @Story("Division")
+    @Description("Menguji operasi pembagian bilangan positif dan negatif")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC2 - Divide Function Test")
+    public void testDivide_PositiveAndNegativeNumbers() {
+        // (1) Persiapan (arrange, build)
+        Allure.step("Persiapan data: a = 6, b = -3");
+        int a = 6;
+        int b = -3;
+
+        // (2) Eksekusi (act, operate)
+        Allure.step("Memanggil fungsi divide dengan parameter a dan b");
+        float result = sut.divide(a, b);
+
+        // (3) Verifikasi (assert, check)
+        Allure.step("Memverifikasi hasil perhitungan. Expected: '-2.00', Actual: " + result);
+        String expected = "-2.00";
+        assertEquals(expected, result);
+    }
+
+    
 }
