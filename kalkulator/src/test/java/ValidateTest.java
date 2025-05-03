@@ -1,4 +1,6 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 import io.qameta.allure.Allure;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Description;
@@ -45,7 +47,7 @@ public class ValidateTest {
         boolean result = sut.isNumeric(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: true, Actual: " + result);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -63,7 +65,7 @@ public class ValidateTest {
         boolean result = sut.isNumeric(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: true, Actual: " + result);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -81,7 +83,7 @@ public class ValidateTest {
         boolean result = sut.isNumeric(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: false, Actual: " + result);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -99,7 +101,7 @@ public class ValidateTest {
         boolean result = sut.isNumeric(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: false, Actual: " + result);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -117,7 +119,7 @@ public class ValidateTest {
         boolean result = sut.isNumeric(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: false, Actual: " + result);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -135,7 +137,7 @@ public class ValidateTest {
         boolean result = sut.isInRange(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: false, Actual: " + result);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -153,7 +155,7 @@ public class ValidateTest {
         boolean result = sut.isInRange(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: false, Actual: " + result);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     @Test
@@ -171,7 +173,7 @@ public class ValidateTest {
         boolean result = sut.isInRange(numStr);
 
         Allure.step("Memverifikasi hasil. Expected: true, Actual: " + result);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
 
