@@ -32,7 +32,13 @@ build/
 .allure/
 
 ### Target ###
-target/
+target/classes/
+target/maven-status/
+target/generated-sources/
+target/generated-test-sources/
+target/test-classes/
+target/allure-results/
+
 
 ### Maven ###
 .mvn/timing.properties
