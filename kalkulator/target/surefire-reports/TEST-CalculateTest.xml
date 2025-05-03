@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="CalculateTest" time="0.228" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="CalculateTest" time="0.254" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.12\bin"/>
-    <property name="sun.java.command" value="C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire9876831950511523763\surefirebooter-20250503210610267_3.jar C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire9876831950511523763 2025-05-03T21-06-09_921-jvmRun1 surefire-20250503210610267_1tmp surefire_0-20250503210610267_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire1629908522248160516\surefirebooter-20250503212126418_3.jar C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire1629908522248160516 2025-05-03T21-21-26_125-jvmRun1 surefire-20250503212126418_1tmp surefire_0-20250503212126418_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\Automation-Testing-Calculator-B9\kalkulator\target\test-classes;D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\Automation-Testing-Calculator-B9\kalkulator\target\classes;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;"/>
     <property name="allure.results.directory" value="target/allure-results"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire9876831950511523763\surefirebooter-20250503210610267_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire1629908522248160516\surefirebooter-20250503212126418_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,7 +57,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testDivideByZero" classname="CalculateTest" time="0.101">
+  <testcase name="testDivideByZero" classname="CalculateTest" time="0.117">
     <failure message="Expected java.lang.ArithmeticException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37)
@@ -140,8 +140,8 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testAdd" classname="CalculateTest" time="0.004"/>
-  <testcase name="testSubtract" classname="CalculateTest" time="0.006"/>
-  <testcase name="testDivide" classname="CalculateTest" time="0.002"/>
-  <testcase name="testMultiply" classname="CalculateTest" time="0.0"/>
+  <testcase name="testAdd" classname="CalculateTest" time="0.006"/>
+  <testcase name="testSubtract" classname="CalculateTest" time="0.009"/>
+  <testcase name="testDivide" classname="CalculateTest" time="0.0"/>
+  <testcase name="testMultiply" classname="CalculateTest" time="0.004"/>
 </testsuite>
