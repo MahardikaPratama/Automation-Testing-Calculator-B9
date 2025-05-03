@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @Epic("Calculator Operations")
 @Feature("Basic Arithmetic")
-class CalculateTest {
+class TestBasic {
 
     private Calculate calculator;
 
