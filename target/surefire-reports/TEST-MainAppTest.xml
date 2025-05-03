@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="MainAppTest" time="0.763" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="MainAppTest" time="0.566" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\kalkulator\target\test-classes;D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\kalkulator\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;"/>
+    <property name="java.class.path" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\target\test-classes;D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire8489844297116693216\surefirebooter-20250504012349483_3.jar C:\Users\LENOVO\AppData\Local\Temp\surefire8489844297116693216 2025-05-04T01-23-49_112-jvmRun1 surefire-20250504012349483_1tmp surefire_0-20250504012349483_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire10259473886408333425\surefirebooter-20250504015103501_3.jar C:\Users\LENOVO\AppData\Local\Temp\surefire10259473886408333425 2025-05-04T01-51-02_200-jvmRun1 surefire-20250504015103501_1tmp surefire_0-20250504015103501_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\kalkulator\target\test-classes;D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\kalkulator\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;"/>
+    <property name="surefire.test.class.path" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\target\test-classes;D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;"/>
     <property name="allure.results.directory" value="target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\LENOVO"/>
@@ -26,12 +26,12 @@
     <property name="java.version.date" value="2024-07-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\kalkulator"/>
+    <property name="basedir" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire8489844297116693216\surefirebooter-20250504012349483_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire10259473886408333425\surefirebooter-20250504015103501_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\LENOVO\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.12"/>
-    <property name="user.dir" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\kalkulator"/>
+    <property name="user.dir" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -57,13 +57,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testRunCalculator_RunOnceThenExit" classname="MainAppTest" time="0.191"/>
-  <testcase name="testIsInRangeFalse" classname="MainAppTest" time="0.27"/>
-  <testcase name="testIsNumericAndIsInRangeTrue" classname="MainAppTest" time="0.077"/>
-  <testcase name="testGetInput_ReturnsUserInput" classname="MainAppTest" time="0.015"/>
-  <testcase name="testInputNumber_InputValid" classname="MainAppTest" time="0.046"/>
-  <testcase name="testIsNumericFalse" classname="MainAppTest" time="0.031"/>
-  <testcase name="testRunCalculator_RunTwiceThenExit" classname="MainAppTest" time="0.02"/>
-  <testcase name="testInputNumber_InvalidThenValid" classname="MainAppTest" time="0.037"/>
-  <testcase name="testParseValidNumber" classname="MainAppTest" time="0.015"/>
+  <testcase name="testRunCalculator_RunOnceThenExit" classname="MainAppTest" time="0.032"/>
+  <testcase name="testIsInRangeFalse" classname="MainAppTest" time="0.014"/>
+  <testcase name="testIsNumericAndIsInRangeTrue" classname="MainAppTest" time="0.007"/>
+  <testcase name="testGetInput_ReturnsUserInput" classname="MainAppTest" time="0.008"/>
+  <testcase name="testInputNumber_InputValid" classname="MainAppTest" time="0.007"/>
+  <testcase name="testIsNumericFalse" classname="MainAppTest" time="0.014"/>
+  <testcase name="testRunCalculator_RunTwiceThenExit" classname="MainAppTest" time="0.093"/>
+  <testcase name="testInputNumber_InvalidThenValid" classname="MainAppTest" time="0.054"/>
+  <testcase name="testParseValidNumber" classname="MainAppTest" time="0.054"/>
 </testsuite>
