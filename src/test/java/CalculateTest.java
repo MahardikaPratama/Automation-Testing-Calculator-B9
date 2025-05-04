@@ -418,57 +418,5 @@ public class CalculateTest {
         assertEquals(expected, result);
     }
 
-    @Test
-    @DisplayName("Menguji operasi pembagian dengan penyebut nol")
-    @Story("Division")
-    @Description("Menguji operasi pembagian dengan penyebut nol")
-    @Severity(SeverityLevel.CRITICAL)
-    @Owner("Salsabil")
-    @AllureId("TC5 - Divide Function Test")
-    public void testDivide_DenominatorIsZero() {
-        Allure.step("Persiapan data: a = 7, b = 0");
-        int a = 7;
-        int b = 0;
-
-        Allure.step("Memverifikasi bahwa pembagian dengan penyebut nol tidak diperbolehkan");
-        Exception exception = assertThrows(ArithmeticException.class, () -> {
-            if (b == 0) {
-                throw new ArithmeticException("Error: Pembagi tidak boleh bernilai nol\nPilih operator lain, selain pembagian!");
-            }
-            sut.divide(a, b); // Tidak akan dieksekusi karena b == 0
-        });
-
-        Allure.step("Memverifikasi pesan error. Expected: 'Error: Pembagi tidak boleh bernilai nol\nPilih operator lain, selain pembagian!'");
-        String expectedMessage = "Error: Pembagi tidak boleh bernilai nol\nPilih operator lain, selain pembagian!";
-        String actualMessage = exception.getMessage();
-        assertEquals(expectedMessage, actualMessage);
-    }
-
-    @Test
-    @DisplayName("Menguji operasi pembagian dua buah input bilangan nol")
-    @Story("Division")
-    @Description("Menguji operasi pembagian dua buah input bilangan nol")
-    @Severity(SeverityLevel.CRITICAL)
-    @Owner("Salsabil")
-    @AllureId("TC6 - Divide Function Test")
-    public void testDivide_BothOperandsAreZero() {
-        Allure.step("Persiapan data: a = 0, b = 0");
-        int a = 0;
-        int b = 0;
-
-        Allure.step("Memverifikasi bahwa pembagian dengan penyebut nol tidak diperbolehkan");
-        Exception exception = assertThrows(ArithmeticException.class, () -> {
-            if (b == 0) {
-                throw new ArithmeticException("Error: Pembagi tidak boleh bernilai nol\nPilih operator lain, selain pembagian!");
-            }
-            sut.divide(a, b); // Tidak akan dieksekusi karena b == 0
-        });
-
-        Allure.step("Memverifikasi pesan error. Expected: 'Error: Pembagi tidak boleh bernilai nol\nPilih operator lain, selain pembagian!'");
-        String expectedMessage = "Error: Pembagi tidak boleh bernilai nol\nPilih operator lain, selain pembagian!";
-        String actualMessage = exception.getMessage();
-        assertEquals(expectedMessage, actualMessage);
-    }
-
     
 }
