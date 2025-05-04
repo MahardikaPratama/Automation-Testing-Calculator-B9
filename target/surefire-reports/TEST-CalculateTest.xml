@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="CalculateTest" time="0.479" tests="19" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="CalculateTest" time="0.478" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.12\bin"/>
-    <property name="sun.java.command" value="C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire16747256372300146967\surefirebooter-20250504141220212_3.jar C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire16747256372300146967 2025-05-04T14-12-19_998-jvmRun1 surefire-20250504141220212_1tmp surefire_0-20250504141220212_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire10303442155718173180\surefirebooter-20250504142515744_3.jar C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire10303442155718173180 2025-05-04T14-25-15_470-jvmRun1 surefire-20250504142515744_1tmp surefire_0-20250504142515744_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9\target\test-classes;D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9\target\classes;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\mockito\mockito-inline\4.11.0\mockito-inline-4.11.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\mockito\mockito-core\4.11.0\mockito-core-4.11.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;C:\Users\Asus s 14 Oled\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="allure.results.directory" value="target/allure-results"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire16747256372300146967\surefirebooter-20250504141220212_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire10303442155718173180\surefirebooter-20250504142515744_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,28 +57,28 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testDivide_NumeratorIsZero" classname="CalculateTest" time="0.127">
+  <testcase name="testDivide_NumeratorIsZero" classname="CalculateTest" time="0.11">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testMultiply_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.053"/>
-  <testcase name="testSubtract_BothOperandsAreZero" classname="CalculateTest" time="0.007"/>
-  <testcase name="testMultiply_PositiveNumbers" classname="CalculateTest" time="0.01"/>
-  <testcase name="testSubtract_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.008"/>
-  <testcase name="testMultiply_NegativeNumbers" classname="CalculateTest" time="0.01"/>
-  <testcase name="testAdd_PositiveNumbers" classname="CalculateTest" time="0.006"/>
-  <testcase name="testDivide_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.005"/>
-  <testcase name="testAdd_NegativeNumbers" classname="CalculateTest" time="0.004"/>
+  <testcase name="testMultiply_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.007"/>
+  <testcase name="testSubtract_BothOperandsAreZero" classname="CalculateTest" time="0.01"/>
+  <testcase name="testMultiply_PositiveNumbers" classname="CalculateTest" time="0.005"/>
+  <testcase name="testSubtract_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.007"/>
+  <testcase name="testMultiply_NegativeNumbers" classname="CalculateTest" time="0.013"/>
+  <testcase name="testAdd_PositiveNumbers" classname="CalculateTest" time="0.008"/>
+  <testcase name="testDivide_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.007"/>
+  <testcase name="testAdd_NegativeNumbers" classname="CalculateTest" time="0.006"/>
   <testcase name="testSubtract_PositiveNumbers" classname="CalculateTest" time="0.005"/>
-  <testcase name="testSubtract_NegativeNumbers" classname="CalculateTest" time="0.002"/>
-  <testcase name="testAdd_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.004"/>
-  <testcase name="testAdd_BothOperandsAreZero" classname="CalculateTest" time="0.004"/>
-  <testcase name="testAdd_OneOperandIsZero" classname="CalculateTest" time="0.003"/>
-  <testcase name="testDivide_PositiveNumbers" classname="CalculateTest" time="0.003"/>
-  <testcase name="testDivide_NegativeNumbers" classname="CalculateTest" time="0.017"/>
+  <testcase name="testSubtract_NegativeNumbers" classname="CalculateTest" time="0.046"/>
+  <testcase name="testAdd_PositiveAndNegativeNumbers" classname="CalculateTest" time="0.005"/>
+  <testcase name="testAdd_BothOperandsAreZero" classname="CalculateTest" time="0.005"/>
+  <testcase name="testAdd_OneOperandIsZero" classname="CalculateTest" time="0.007"/>
+  <testcase name="testDivide_PositiveNumbers" classname="CalculateTest" time="0.009"/>
+  <testcase name="testDivide_NegativeNumbers" classname="CalculateTest" time="0.028"/>
   <testcase name="testMultiply_OneOperandIsZero" classname="CalculateTest" time="0.004"/>
-  <testcase name="testSubtract_OneOperandIsZero" classname="CalculateTest" time="0.003"/>
-  <testcase name="testMultiply_BothOperandsAreZero" classname="CalculateTest" time="0.019"/>
+  <testcase name="testSubtract_OneOperandIsZero" classname="CalculateTest" time="0.004"/>
+  <testcase name="testMultiply_BothOperandsAreZero" classname="CalculateTest" time="0.003"/>
 </testsuite>
