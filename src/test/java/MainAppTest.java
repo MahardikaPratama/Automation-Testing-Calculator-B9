@@ -1,6 +1,7 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.Mockito.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -15,6 +16,7 @@ import org.junit.jupiter.api.Test;
 
 import com.calculator.MainApp;
 import com.calculator.Validate;
+import com.calculator.Compute;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.AllureId;
@@ -677,5 +679,68 @@ public class MainAppTest {
         assertFalse(result);
         assertTrue(output.contains("Pembagi tidak boleh bernilai nol"));
         assertTrue(output.contains("Pilih operator lain"));
+    }
+
+    @Test
+    @DisplayName("Menguji alur perhitungan satu kali dengan input yang valid")
+    @Story("Alur Perhitungan")
+    @Description("Menguji alur perhitungan satu kali dengan input yang valid")
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("Salsabil")
+    @AllureId("TC1 - performCalculationFlow Test")
+    public void testPerformCalculationFlow_OneCalculation_NoMockScanner() throws Exception {
+        String simulatedInput = String.join(System.lineSeparator(),
+        "5",
+            "3",
+            "+"
+        );
+        Scanner scanner = new Scanner(new java.io.ByteArrayInputStream(simulatedInput.getBytes()));
+
+        Validate validate = new Validate();
+        Compute compute = mock(Compute.class);
+
+        when(compute.performCalculation(5, 3, "+")).thenReturn("8");
+
+        Method method = MainApp.class.getDeclaredMethod("performCalculationFlow", Scanner.class, Validate.class, Compute.class);
+        method.setAccessible(true);
+
+        Allure.step("Menjalankan performCalculationFlow dengan input num1 = 5, num2 = 3, operator = '+'");
+        method.invoke(null, scanner, validate, compute);
+
+        verify(compute, times(1)).performCalculation(5, 3, "+");
+    }
+
+    @Test
+    @DisplayName("Menguji alur perhitungan satu kali dengan input yang tidak valid")
+    @Story("Alur Perhitungan")
+    @Description("Menguji alur perhitungan satu kali dengan input yang tidak valid")
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("Salsabil")
+    @AllureId("TC2 - performCalculationFlow Test")
+    public void testPerformCalculationFlow_InvalidInput_NoMockScanner() throws Exception {
+        String simulatedInput = String.join(System.lineSeparator(),
+            "abc",
+            "5",
+            "xyz",
+            "3",
+            "x",
+            "+"
+        );
+        Scanner scanner = new Scanner(new java.io.ByteArrayInputStream(simulatedInput.getBytes()));
+
+        Validate validate = new Validate();
+        Compute compute = mock(Compute.class);
+
+        when(compute.performCalculation(5, 3, "+")).thenReturn("8");
+
+        Method method = MainApp.class.getDeclaredMethod("performCalculationFlow", Scanner.class, Validate.class, Compute.class);
+        method.setAccessible(true);
+
+        Allure.step("Simulasi input pengguna dengan input tidak valid di awal");
+        Allure.step("Memanggil performCalculationFlow dengan input tidak valid");
+        method.invoke(null, scanner, validate, compute);
+
+        Allure.step("Memverifikasi bahwa fungsi performCalculation dipanggil setelah input valid diberikan");
+        verify(compute, times(1)).performCalculation(5, 3, "+");
     }
 }

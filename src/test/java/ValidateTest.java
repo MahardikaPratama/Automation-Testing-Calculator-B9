@@ -176,5 +176,81 @@ public class ValidateTest {
         assertTrue(result);
     }
 
+    @Test
+    @DisplayName("Menguji kondisi valid pembagian, saat penyebut (num2) bukan nol")
+    @Story("Validasi Pembagian")
+    @Description("Menguji kondisi valid pembagian, saat penyebut (num2) bukan nol")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC1 - isValidDivision Test")
+    public void testIsValidDivision_Valid() {
+        Allure.step("Persiapan data: num2 = 5");
+        int num2 = 5;
+
+        Allure.step("Memanggil fungsi isValidDivision dengan parameter num2");
+        Validate validate = new Validate();
+        boolean result = validate.isValidDivision(num2);
+
+        Allure.step("Memverifikasi hasil validasi. Expected: true, Actual: " + result);
+        assertTrue(result, "Fungsi isValidDivision seharusnya mengembalikan true untuk num2 != 0");
+    }
+
+    @Test
+    @DisplayName("Menguji kondisi tidak valid pembagian, saat penyebut (num2) bernilai nol")
+    @Story("Validasi Pembagian")
+    @Description("Menguji kondisi tidak valid pembagian, saat penyebut (num2) bernilai nol")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC2 - isValidDivision Test")
+    public void testIsValidDivision_Invalid() {
+        Allure.step("Persiapan data: num2 = 0");
+        int num2 = 0;
+
+        Allure.step("Memanggil fungsi isValidDivision dengan parameter num2");
+        Validate validate = new Validate();
+        boolean result = validate.isValidDivision(num2);
+
+        Allure.step("Memverifikasi hasil validasi. Expected: false, Actual: " + result);
+        assertFalse(result, "Fungsi isValidDivision seharusnya mengembalikan false untuk num2 == 0");
+    }
+
+    @Test
+    @DisplayName("Menguji input operator valid karena termasuk ke dalam (+, -, *, /)")
+    @Story("Validasi Operator")
+    @Description("Menguji input operator valid karena termasuk ke dalam (+, -, *, /)")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC1 - isValidOperator Test")
+    public void testIsValidOperator_Valid() {
+        Allure.step("Persiapan data: operator = \"+\"");
+        String operator = "+";
+
+        Allure.step("Memanggil fungsi isValidOperator dengan parameter operator");
+        Validate validate = new Validate();
+        boolean result = validate.isValidOperator(operator);
+
+        Allure.step("Memverifikasi hasil validasi. Expected: true, Actual: " + result);
+        assertTrue(result, "Fungsi isValidOperator seharusnya mengembalikan true untuk operator valid (+, -, *, /)");
+    }
+
+    @Test
+    @DisplayName("Menguji input operator tidak valid karena bukan (+, -, *, /)")
+    @Story("Validasi Operator")
+    @Description("Menguji input operator tidak valid karena bukan (+, -, *, /)")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Salsabil")
+    @AllureId("TC2 - isValidOperator Test")
+    public void testIsValidOperator_Invalid() {
+        Allure.step("Persiapan data: operator = \"x\"");
+        String operator = "x";
+
+        Allure.step("Memanggil fungsi isValidOperator dengan parameter operator");
+        Validate validate = new Validate();
+        boolean result = validate.isValidOperator(operator);
+
+        Allure.step("Memverifikasi hasil validasi. Expected: false, Actual: " + result);
+        assertFalse(result, "Fungsi isValidOperator seharusnya mengembalikan false untuk operator tidak valid");
+    }
+
 
 }

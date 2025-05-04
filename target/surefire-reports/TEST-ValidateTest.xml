@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="ValidateTest" time="0.063" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="ValidateTest" time="0.139" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9\target\test-classes;D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9\target\classes;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;"/>
+    <property name="java.class.path" value="D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\PROGRAM\Automation-Testing-Calculator-B9\target\test-classes;D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\PROGRAM\Automation-Testing-Calculator-B9\target\classes;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\mockito\mockito-inline\4.11.0\mockito-inline-4.11.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\mockito\mockito-core\4.11.0\mockito-core-4.11.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,54 +15,58 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.12\bin"/>
-    <property name="sun.java.command" value="C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire8521525905608272017\surefirebooter-20250504101400416_3.jar C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire8521525905608272017 2025-05-04T10-14-00_240-jvmRun1 surefire-20250504101400416_1tmp surefire_0-20250504101400416_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire10026781685808605613\surefirebooter-20250504124247012_3.jar C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire10026781685808605613 2025-05-04T12-42-46_523-jvmRun1 surefire-20250504124247012_1tmp surefire_0-20250504124247012_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9\target\test-classes;D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9\target\classes;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Asus s 14 Oled\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;"/>
+    <property name="surefire.test.class.path" value="D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\PROGRAM\Automation-Testing-Calculator-B9\target\test-classes;D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\PROGRAM\Automation-Testing-Calculator-B9\target\classes;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\mockito\mockito-inline\4.11.0\mockito-inline-4.11.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\mockito\mockito-core\4.11.0\mockito-core-4.11.0.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\Nabila Nur Fadhilah\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="allure.results.directory" value="target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Asus s 14 Oled"/>
+    <property name="user.home" value="C:\Users\Nabila Nur Fadhilah"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2024-07-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.12"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="basedir" value="D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\PROGRAM\Automation-Testing-Calculator-B9"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Asus s 14 Oled\AppData\Local\Temp\surefire8521525905608272017\surefirebooter-20250504101400416_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nabila Nur Fadhilah\AppData\Local\Temp\surefire10026781685808605613\surefirebooter-20250504124247012_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
-    <property name="user.name" value="Asus s 14 Oled"/>
+    <property name="user.name" value="Nabila Nur Fadhilah"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\Asus s 14 Oled\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\Nabila Nur Fadhilah\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\ASUSS1~1\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\NABILA~1\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.12"/>
-    <property name="user.dir" value="D:\Semester 6\PENGUJIAN PERANGKAT LUNAK\Praktikum\W8-9\Automation-Testing-Calculator-B9"/>
+    <property name="user.dir" value="D:\POLBAN\SEMESTER 6\PPL (Testing)\Praktek\Pertemuan 9\PROGRAM\Automation-Testing-Calculator-B9"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Asus s 14 Oled\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Asus s 14 Oled\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.12\bin;C:\Windows\kafka_2.12-3.9.0\bin;C:\Windows\apache-maven-3.9.9\bin;C:\minikube;C:\gradle-8.14\bin;C:\ProgramData\chocolatey\bin;C:\Users\Asus s 14 Oled\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\Asus s 14 Oled\AppData\Local\Programs\Python\Python313;C:\Users\Asus s 14 Oled\AppData\Local\Microsoft\WindowsApps;C:\Users\Asus s 14 Oled\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.4.1\bin;C:\Program Files\Java\jdk-21\bin;C:\Windows\kafka_2.12-3.9.0\bin;C:\Windows\apache-maven-3.9.9\bin;C:\gradle-8.14\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.12\bin;C:\Program Files\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\nodejs\;C:\xampp\mysql\bin;C:\php;C:\ProgramData\ComposerSetup\bin;C:\Users\Nabila Nur Fadhilah\.minikube;C:\Program Files\MongoDB\Server\8.0\bin;C:\gradle-8.14\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Nabila Nur Fadhilah\AppData\Local\Microsoft\WindowsApps;C:\Users\Nabila Nur Fadhilah\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\Nabila Nur Fadhilah\AppData\Roaming\npm;C:\Users\Nabila Nur Fadhilah\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.4.1\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testIsNumeric_EmptyString" classname="ValidateTest" time="0.006"/>
-  <testcase name="testIsNumeric_MixedCharacters" classname="ValidateTest" time="0.004"/>
-  <testcase name="testIsNumeric_NegativeNumber" classname="ValidateTest" time="0.008"/>
-  <testcase name="testIsNumeric_PositiveNumber" classname="ValidateTest" time="0.001"/>
-  <testcase name="testIsInRange_ValidRange" classname="ValidateTest" time="0.004"/>
-  <testcase name="testIsNumeric_NonNumericLetters" classname="ValidateTest" time="0.0"/>
-  <testcase name="testIsInRange_AboveUpperBound" classname="ValidateTest" time="0.002"/>
-  <testcase name="testIsInRange_BelowLowerBound" classname="ValidateTest" time="0.0"/>
+  <testcase name="testIsNumeric_EmptyString" classname="ValidateTest" time="0.005"/>
+  <testcase name="testIsNumeric_MixedCharacters" classname="ValidateTest" time="0.003"/>
+  <testcase name="testIsNumeric_NegativeNumber" classname="ValidateTest" time="0.015"/>
+  <testcase name="testIsNumeric_PositiveNumber" classname="ValidateTest" time="0.007"/>
+  <testcase name="testIsValidOperator_Invalid" classname="ValidateTest" time="0.008"/>
+  <testcase name="testIsInRange_ValidRange" classname="ValidateTest" time="0.007"/>
+  <testcase name="testIsNumeric_NonNumericLetters" classname="ValidateTest" time="0.005"/>
+  <testcase name="testIsValidOperator_Valid" classname="ValidateTest" time="0.002"/>
+  <testcase name="testIsValidDivision_Valid" classname="ValidateTest" time="0.007"/>
+  <testcase name="testIsValidDivision_Invalid" classname="ValidateTest" time="0.006"/>
+  <testcase name="testIsInRange_AboveUpperBound" classname="ValidateTest" time="0.005"/>
+  <testcase name="testIsInRange_BelowLowerBound" classname="ValidateTest" time="0.007"/>
 </testsuite>

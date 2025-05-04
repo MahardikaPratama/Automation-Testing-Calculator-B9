@@ -27,7 +27,7 @@ public class Validate {
         }
     }
 
-        /*
+    /*
      * Fungsi ini digunakan untuk memvalidasi apakah operator yang dimasukkan valid (+, -, *, /)
      */
     public boolean isValidOperator(String operator) {
