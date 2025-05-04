@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="MainAppTest" time="3.491" tests="23" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="MainAppTest" time="2.719" tests="23" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire12089812968323799951\surefirebooter-20250504125637570_3.jar C:\Users\LENOVO\AppData\Local\Temp\surefire12089812968323799951 2025-05-04T12-56-37_159-jvmRun1 surefire-20250504125637570_1tmp surefire_0-20250504125637570_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire2596233628464987437\surefirebooter-20250504131254634_3.jar C:\Users\LENOVO\AppData\Local\Temp\surefire2596233628464987437 2025-05-04T13-12-54_267-jvmRun1 surefire-20250504131254634_1tmp surefire_0-20250504131254634_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\target\test-classes;D:\Kuliah\Semester 6\PPL\Automation-Testing-Calculator-B9\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\LENOVO\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\LENOVO\.m2\repository\org\mockito\mockito-inline\4.11.0\mockito-inline-4.11.0.jar;C:\Users\LENOVO\.m2\repository\org\mockito\mockito-core\4.11.0\mockito-core-4.11.0.jar;C:\Users\LENOVO\.m2\repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;C:\Users\LENOVO\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\LENOVO\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="allure.results.directory" value="target/allure-results"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire12089812968323799951\surefirebooter-20250504125637570_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire2596233628464987437\surefirebooter-20250504131254634_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,27 +57,27 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAskRepeat_InputY_ReturnsTrue" classname="MainAppTest" time="0.084"/>
-  <testcase name="testRunCalculator_RunOnceThenExit" classname="MainAppTest" time="0.043"/>
-  <testcase name="testIsInRangeFalse" classname="MainAppTest" time="0.016"/>
-  <testcase name="testIsValidOperatorInput_InvalidOperator" classname="MainAppTest" time="0.015"/>
-  <testcase name="testIsNumericAndIsInRangeTrue" classname="MainAppTest" time="0.016"/>
-  <testcase name="testPrintHeader_OutputCorrect" classname="MainAppTest" time="0.015"/>
-  <testcase name="testGetInput_ReturnsUserInput" classname="MainAppTest" time="0.0"/>
-  <testcase name="testIsValidOperatorInput_DivideByZero" classname="MainAppTest" time="0.007"/>
-  <testcase name="testPerformCalculationFlow_OneCalculation_NoMockScanner" classname="MainAppTest" time="2.355"/>
+  <testcase name="testAskRepeat_InputY_ReturnsTrue" classname="MainAppTest" time="0.031"/>
+  <testcase name="testRunCalculator_RunOnceThenExit" classname="MainAppTest" time="0.051"/>
+  <testcase name="testIsInRangeFalse" classname="MainAppTest" time="0.012"/>
+  <testcase name="testIsValidOperatorInput_InvalidOperator" classname="MainAppTest" time="0.088"/>
+  <testcase name="testIsNumericAndIsInRangeTrue" classname="MainAppTest" time="0.043"/>
+  <testcase name="testPrintHeader_OutputCorrect" classname="MainAppTest" time="0.013"/>
+  <testcase name="testGetInput_ReturnsUserInput" classname="MainAppTest" time="0.015"/>
+  <testcase name="testIsValidOperatorInput_DivideByZero" classname="MainAppTest" time="0.016"/>
+  <testcase name="testPerformCalculationFlow_OneCalculation_NoMockScanner" classname="MainAppTest" time="2.069"/>
   <testcase name="testInputNumber_InputValid" classname="MainAppTest" time="0.016"/>
-  <testcase name="testAskRepeat_InputN_ReturnsFalse" classname="MainAppTest" time="0.032"/>
-  <testcase name="testPerformCalculationFlow_InvalidInput_NoMockScanner" classname="MainAppTest" time="0.047"/>
-  <testcase name="testIsValidOperatorInput_ValidNonDivision" classname="MainAppTest" time="0.041"/>
-  <testcase name="testIsNumericFalse" classname="MainAppTest" time="0.095"/>
-  <testcase name="testInputOperator_ValidInput_WithPromptCheck" classname="MainAppTest" time="0.061"/>
-  <testcase name="testRunCalculator_RunTwiceThenExit" classname="MainAppTest" time="0.11"/>
-  <testcase name="testInputNumber_InvalidThenValid" classname="MainAppTest" time="0.032"/>
-  <testcase name="testAskRepeat_InvalidThenValidInput" classname="MainAppTest" time="0.031"/>
-  <testcase name="testParseValidNumber" classname="MainAppTest" time="0.016"/>
-  <testcase name="testGetOperatorInput_ReturnsUserInput" classname="MainAppTest" time="0.008"/>
+  <testcase name="testAskRepeat_InputN_ReturnsFalse" classname="MainAppTest" time="0.008"/>
+  <testcase name="testPerformCalculationFlow_InvalidInput_NoMockScanner" classname="MainAppTest" time="0.016"/>
+  <testcase name="testIsValidOperatorInput_ValidNonDivision" classname="MainAppTest" time="0.016"/>
+  <testcase name="testIsNumericFalse" classname="MainAppTest" time="0.016"/>
+  <testcase name="testInputOperator_ValidInput_WithPromptCheck" classname="MainAppTest" time="0.0"/>
+  <testcase name="testRunCalculator_RunTwiceThenExit" classname="MainAppTest" time="0.016"/>
+  <testcase name="testInputNumber_InvalidThenValid" classname="MainAppTest" time="0.009"/>
+  <testcase name="testAskRepeat_InvalidThenValidInput" classname="MainAppTest" time="0.005"/>
+  <testcase name="testParseValidNumber" classname="MainAppTest" time="0.0"/>
+  <testcase name="testGetOperatorInput_ReturnsUserInput" classname="MainAppTest" time="0.0"/>
   <testcase name="testPrintExitMessage_OutputCorrect" classname="MainAppTest" time="0.015"/>
   <testcase name="testDisplayResult_OutputCorrect" classname="MainAppTest" time="0.016"/>
-  <testcase name="testInputOperator_InvalidThenValidInput_WithPromptAndErrorCheck" classname="MainAppTest" time="0.0"/>
+  <testcase name="testInputOperator_InvalidThenValidInput_WithPromptAndErrorCheck" classname="MainAppTest" time="0.016"/>
 </testsuite>
