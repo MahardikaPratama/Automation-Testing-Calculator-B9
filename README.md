@@ -4,7 +4,7 @@
 | NIM        | Nama                     |
 |------------|--------------------------|
 | 221524044  | Mahardika Pratama        |
-| 221524052  | Naia Siti Az-Zahra       |
+| 221524052  | Naia Siti Az-zahra       |
 | 221524058  | Salsabil Khoirunisa      |
 
 ---
